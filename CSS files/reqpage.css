@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #006A67;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Assistance Info Section */
+.assistance-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assistance-info li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Request Form Styles */
+.request-form h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+.request-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.request-form input, 
+.request-form select,
+.request-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.request-form .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #006A67;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.request-form .button:hover {
+    background-color: #006A67;
+}
+
+/* Confidentiality Section */
+.confidentiality {
+    background-color: #e9ecef;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* FAQs Section */
+.faqs h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.faqs p {
+    margin-top: 5px;
+}

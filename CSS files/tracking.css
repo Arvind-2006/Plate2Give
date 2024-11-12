@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Section Styling */
+.search-section, .view-section, .order-section, .review-section {
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+.input-field {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff5722;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Button for specific actions */
+#search_button {
+    background-color: #4CAF50; /* Green for search */
+}
+
+#view_restaurant_button {
+    background-color: #03A9F4; /* Blue for view */
+}
+
+#place_order_button {
+    background-color: #FF9800; /* Orange for place order */
+}
+
+#submit_review_button {
+    background-color: #9C27B0; /* Purple for review */
+}
+
+#submit_review_button:hover {
+    background-color: #8E24AA; /* Darker purple for hover effect */
+}

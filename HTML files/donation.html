@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Food For All</title>
+    <link rel="stylesheet" href="donorpage.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Donate Food</h1>
+            <div class="search-container">
+                
+                <button class="search-button" id="search-input">Search</button>
+            </div>
+            <p>Make a Difference with Your Donation</p>
+            <p>Your contribution can help feed those in need, reduce food waste, and support your community.</p>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <ul>
+                <li><strong>1. Fill Out the Form Below:</strong> Provide details about the food you’re donating so we can match it with those in need.</li>
+                <li><strong>2. Choose a Pickup or Drop-off Option:</strong> Schedule a convenient pickup or choose a drop-off location.</li>
+                <li><strong>3. Impact Lives:</strong> We distribute your donations to families, shelters, and community organizations.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="donation-form">
+        <div class="container">
+            <h2>Donation Form</h2>
+            <form action="submit_donation.php" method="POST" enctype="multipart/form-data">
+                <!-- Donor Information -->
+                <h3>Donor Information</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Food Details -->
+                <h3>Food Details</h3>
+                <label for="food-type">Food Type</label>
+                <input type="text" id="food-type" name="food-type" placeholder="e.g., Canned goods, fresh produce" required>
+
+                <label for="quantity">Quantity</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 5 bags, 10 kg" required>
+
+                <label for="expiry">Expiration Date</label>
+                <input type="date" id="expiry" name="expiry" required>
+
+                <!-- Pickup/Drop-off Options -->
+                <h3>Pickup/Drop-off Options</h3>
+                <label for="option">Preferred Option</label>
+                <select id="option" name="option" required>
+                    <option value="pickup">Pickup</option>
+                    <option value="dropoff">Drop-off</option>
+                </select>
+
+                <label for="location">Pickup Location (if different from address)</label>
+                <input type="text" id="location" name="location" placeholder="Add any special instructions">
+
+                <!-- Image Upload -->
+                <label for="image">Image Upload (optional)</label>
+                <input type="file" id="image" name="image">
+
+                <!-- Additional Comments -->
+                <label for="comments">Comments or Special Instructions</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any specific details you’d like us to know?"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button" ><a href="thanking.html">Submit Donation</a></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Thank You Section -->
+    <section class="thank-you">
+        <div class="container">
+            <h2>Thank You for Your Generosity!</h2>
+            <p>Every donation counts, and your support makes a world of difference. Together, we can fight hunger and foster a caring community.</p>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Is my donation tax-deductible?</h3>
+            <p>Yes, all donations are eligible for tax deductions. We’ll send you a receipt after confirmation.</p>
+            <h3>What types of food are most needed?</h3>
+            <p>We’re always in need of non-perishable items, fresh produce, and prepared foods (in unopened packaging).</p>
+            <h3>How do I know my donation was received?</h3>
+            <p>You’ll get an email confirmation once we process your donation and a follow-up when it reaches those in need.</p>
+        </div>
+    </section>
+
+    <script src="donation.js"></script>
+    <script src="thanking.js"></script>
+    
+</body>
+</html>

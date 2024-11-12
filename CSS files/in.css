@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #151e6b;
+    background-color: #e9ecee;
+}
+
+.container {
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0e035e;
+    color:#fdfafa;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+header h1 {
+    font-size: 2.9em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.mission h2, .help h2, .impact h2, .stories h2, .get-involved h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.para{
+    padding: 25px;
+}
+.help-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.option h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.impact-stats p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.stories blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    background-color: #0e035e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media a img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #252525;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: italic;
+    font-size: 1.2em;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.8em;
+}
+
+.menu-icon {
+    font-size: 1.8em;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: #030303;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Adjust main content when sidebar is open */
+body.open-sidebar {
+    margin-left: 250px;
+}
+

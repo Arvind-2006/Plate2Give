@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Food Assistance - Food For All</title>
+    <link rel="stylesheet" href="reqpage.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Request Food Assistance</h1>
+            <p>We’re Here to Help</p>
+            <p>If you or your organization needs food support, please fill out the form below. Your request will be handled with care and confidentiality.</p>
+        </div>
+    </header>
+
+    <!-- Assistance Information Section -->
+    <section class="assistance-info">
+        <div class="container">
+            <h2>How Our Assistance Works</h2>
+            <ul>
+                <li><strong>1. Fill Out the Request Form:</strong> Provide basic information about your needs, and we'll review your request promptly.</li>
+                <li><strong>2. Connect with a Local Provider:</strong> Our team will match you with nearby food resources or arrange a delivery option.</li>
+                <li><strong>3. Receive Assistance:</strong> We’ll ensure that you receive the support you need in a timely manner.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Request Form Section -->
+    <section class="request-form">
+        <div class="container">
+            <h2>Food Assistance Request Form</h2>
+            <form action="submit_request.php" method="POST">
+                <!-- Applicant Information -->
+                <h3>Personal or Organization Information</h3>
+                <label for="name">Full Name / Organization Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Food Needs Details -->
+                <h3>Food Needs Details</h3>
+                <label for="type-of-food">Type of Food Needed</label>
+                <input type="text" id="type-of-food" name="type-of-food" placeholder="e.g., Fresh produce, canned goods, meals" required>
+
+                <label for="quantity">Quantity (approximate)</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 3 meals per day for 4 people" required>
+
+                <label for="urgency">Urgency Level</label>
+                <select id="urgency" name="urgency" required>
+                    <option value="immediate">Immediate (within 24 hours)</option>
+                    <option value="urgent">Urgent (within 3 days)</option>
+                    <option value="regular">Regular Need</option>
+                </select>
+
+                <!-- Pickup/Delivery Options -->
+                <h3>Pickup/Delivery Options</h3>
+                <label for="address">Delivery Address (if applicable)</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address or preferred pickup location">
+
+                <label for="option">Preferred Option</label>
+                <select id="option" name="option" required>
+                    <option value="pickup">I will pick up the food</option>
+                    <option value="delivery">I need delivery assistance</option>
+                </select>
+
+                <!-- Additional Comments -->
+                <label for="comments">Comments or Special Instructions</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any specific details you’d like us to know?"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confidentiality Section -->
+    <section class="confidentiality">
+        <div class="container">
+            <h2>Our Commitment to Confidentiality</h2>
+            <p>Your privacy is important to us. All requests are handled with the utmost confidentiality and respect. We will only share necessary information with trusted food partners to fulfill your request.</p>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Is there a cost for food assistance?</h3>
+            <p>No, all our food assistance is provided free of charge thanks to the generosity of our donors and volunteers.</p>
+            <h3>How quickly will I receive assistance?</h3>
+            <p>We prioritize requests based on urgency and aim to fulfill them within 24-72 hours.</p>
+            <h3>What types of food are available?</h3>
+            <p>We provide a variety of food items, including non-perishable items, fresh produce, and meals, based on availability.</p>
+        </div>
+    </section>
+</body>
+</html>

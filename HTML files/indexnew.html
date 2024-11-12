@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food For All - Home</title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="donorform.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Plate2Give</h1>
+            <p>A World Without Hunger Starts with You</p>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>We connect individuals and businesses with surplus food to those who need it most. With your help, we turn excess into opportunity, delivering meals to families, shelters, and communities across the region.</p>
+            <br><br><br><h2>Why Food Matters</h2>
+            <p>Each year, millions of tons of food go to waste, while millions of people go hungry. We believe that no one should have to choose between food and other essentials.</p>
+        </div>
+    </section>
+
+    <!-- How You Can Help Section -->
+    <section class="help">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <div class="help-options">
+                <div class="option">
+                    <h3>Donate Food</h3>
+                    <p>Have extra food items or surplus stock? Let’s get it to those who need it most.</p>
+                    <a href="donation.html" class="button">Get Started </a>
+                </div>
+                <div class="option">
+                    <h3>Request Food</h3>
+                    <p>Are you or your organization in need of food support? We’re here to help.</p>
+                    <a href="req.html" class="button">Request Assistance </a>
+                </div>
+                <div class="option">
+                    <h3>Volunteer with Us</h3>
+                    <p>Become a part of our journey. Join us in food collection, distribution, and outreach.</p>
+                    <a href="voluntpage.html" class="button">Learn More </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="impact-stats">
+                <p><strong>10,000+</strong> Meals Served</p>
+                <p><strong>500+</strong> Families Assisted Monthly</p>
+                <p><strong>200,000 lbs</strong> of Food Saved from Waste</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="story">
+                <blockquote>“During a difficult time, the support from this platform provided more than just meals—it gave us hope.”</blockquote>
+                <p>– Sarah, Food Recipient</p>
+            </div>
+            <div class="story">
+                <blockquote>“As a business, donating surplus food was simple and impactful. We’re proud to contribute to a cause that matters.”</blockquote>
+                <p>– Mike, Business Donor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+        <div class="container">
+            <h2>Get Involved Today</h2>
+            <p>Every donation, every volunteer hour, and every meal served counts. Join us in creating a hunger-free future.</p>
+            <!--<div class="buttons">
+                <a href="donorform.html" class="button">Donate Now</a>
+                <a href="request.html" class="button">Request Food</a>
+                <a href="volunteer.html" class="button">Volunteer</a>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Stay Connected</p>
+            <!--<div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>-->
+            <p>&copy; 2024 Food For All. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="donorform.js"></script>
+    
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href=donation.html>Donate Food</a>
+        <a href=req.html>Request Food</a>
+        <a href=voluntpage.html>Volunteer With US</a>
+        <a href=aboutus.html>About Us</a>
+        <a href=contactus.html>Contact</a>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+        <span class="menu-icon" onclick="openNav()">&#9776;
+
+        </span>
+    <script>
+        function openNav(){
+            document.getElementById("sidebar").style.width = "250px";
+            document.body.classList.add("open-sidebar");
+        }
+        
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.body.classList.remove("open-sidebar");
+        }
+    </script>
+        
+
+
+</body>
+</html>

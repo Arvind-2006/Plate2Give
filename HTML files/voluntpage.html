@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as a Volunteer - Food For All</title>
+    <link rel="stylesheet" href="volun.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Join Our Volunteer Team</h1>
+            <p>Make a Difference in Your Community</p>
+            <p>Whether you can give a few hours or a few days, your time and effort will make a lasting impact on the lives of others.</p>
+        </div>
+    </header>
+
+    <!-- Why Volunteer Section -->
+    <section class="why-volunteer">
+        <div class="container">
+            <h2>Why Volunteer with Us?</h2>
+            <p>As a volunteer, you’ll be part of a dedicated team working to reduce food waste and support those facing hunger. You'll gain hands-on experience, meet amazing people, and help create a healthier, more caring community.</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Roles Section -->
+    <section class="volunteer-roles">
+        <div class="container">
+            <h2>Volunteer Opportunities</h2>
+            <ul>
+                <li><strong>Food Sorting & Packaging:</strong> Help organize and pack food donations for distribution.</li>
+                <li><strong>Delivery Driver:</strong> Assist in delivering food donations to families and partner organizations.</li>
+                <li><strong>Community Outreach:</strong> Raise awareness about our mission and recruit more volunteers.</li>
+                <li><strong>Event Support:</strong> Lend a hand during community events and fundraisers.</li>
+                <li><strong>Administrative Assistance:</strong> Provide office support to keep our operations running smoothly.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Volunteer Signup Form Section -->
+    <section class="volunteer-form">
+        <div class="container">
+            <h2>Volunteer Signup Form</h2>
+            <form action="submit_volunteer.php" method="POST">
+                <!-- Volunteer Information -->
+                <h3>Personal Information</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Role Selection -->
+                <h3>Preferred Volunteer Role</h3>
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="food-sorting">Food Sorting & Packaging</option>
+                    <option value="delivery-driver">Delivery Driver</option>
+                    <option value="community-outreach">Community Outreach</option>
+                    <option value="event-support">Event Support</option>
+                    <option value="admin-assistance">Administrative Assistance</option>
+                    <option value="any">I'm open to any role</option>
+                </select>
+
+                <!-- Availability -->
+                <h3>Availability</h3>
+                <label for="availability">When are you available to volunteer?</label>
+                <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Weekdays, Evenings" required>
+
+                <!-- Additional Comments -->
+                <label for="comments">Comments or Special Skills</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Share any specific skills or experience you'd like us to know about"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button"><a href="volsuccess.html">Submit</a></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Volunteer Benefits Section -->
+    <section class="volunteer-benefits">
+        <div class="container">
+            <h2>Benefits of Volunteering</h2>
+            <p>Volunteering with us offers the chance to make new friends, gain meaningful experience, and have a positive impact in your community. Join us in making a real difference!</p>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Do I need experience to volunteer?</h3>
+            <p>No experience is needed! We provide training for all volunteer roles.</p>
+            <h3>How much time do I need to commit?</h3>
+            <p>We have flexible options to fit your schedule. You can volunteer as much or as little as you’re able.</p>
+            <h3>Can I volunteer with friends or family?</h3>
+            <p>Absolutely! Volunteering as a group is a great way to make a collective impact.</p>
+        </div>
+    </section>
+</body>
+</html>

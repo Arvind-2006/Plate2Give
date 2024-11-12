@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #006A67;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+}
+/* Search Container */
+.search-container {
+    position: absolute;
+    top: 10px; /* Adjusts distance from the top */
+    right: 10px; /* Adjusts distance from the right edge */
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-container .search-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #006A67;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-container .search-button:hover {
+    background-color: #005c5b;
+}
+
+
+
+
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* How It Works Section */
+.how-it-works ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.how-it-works li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Donation Form Styles */
+.donation-form h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+.donation-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.donation-form input, 
+.donation-form select,
+.donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donation-form .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #006A67;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.donation-form .button:hover {
+    background-color: #006A67;
+}
+
+/* Thank You Section */
+.thank-you {
+    background-color: #e9f7ef;
+    color: #4376a3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* FAQs Section */
+.faqs h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.faqs p {
+    margin-top: 5px;
+}

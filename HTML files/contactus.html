@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Food For All</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </header>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Our Contact Information</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li><strong>Email:</strong> info@Plate2Give.org</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Address:</strong> 123 Food Lane, City, State, ZIP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509567!2d144.95373631568757!3d-37.816279979751944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0cabe06f%3A0xb9f1e8470c8ae3b2!2s123%20Food%20Lane%2C%20Melbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1627874864885!5m2!1sen!2sus" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Food For All. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
